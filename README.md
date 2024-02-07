@@ -1,2 +1,2 @@
-# Blogging-Panel
-This Project gives you the ease and freedom to update your POSTS and CONTENTS in your WEBSITE.
+# Django Blogging-Panel
+This Django Project gives you the ease and freedom to update your POSTS and CONTENTS in your WEBSITE.
