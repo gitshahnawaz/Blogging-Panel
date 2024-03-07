@@ -1,19 +1,12 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "This Django Project gives you the ease and freedom to update your POSTS and CONTENTS in your WEBSITE.",
-  "main": ".Blog/Blog/wsgi.py",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gitshahnawaz/Blogging-Panel.git"
-  },
-  "author": "shahnawaz",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gitshahnawaz/Blogging-Panel/issues"
-  },
-  "homepage": "https://github.com/gitshahnawaz/Blogging-Panel#readme"
+  "version": 2,
+  "builds": [
+    { "src": "Blog/wsgi.py", 
+      "use": "@vercel/python",
+      "config":{"maxLambdaSize": "15mh", "runtime": "python3.9" }
+  ],
+  "routes": [
+    
+    { "src": "/(.*)", "dest": "Blog/wsgi.py" }
+  ]
 }
