@@ -7,6 +7,6 @@
     }],
   "routes": [
     
-    { "src": "/(.*)", "dest": "Blog/wsgi.py" }
+    { "src": "/(.*)", "dest": "Blog/Blog/wsgi.py" }
   ]
 }
